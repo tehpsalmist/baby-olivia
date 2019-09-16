@@ -4,7 +4,7 @@ const productionPlugins = NODE_ENV === 'production'
   ? [
     purgecss({
       content: ['./index.html', './src/**/*.js'],
-      whitelistPatterns: [/partner-animation-\d-\d/],
+      whitelistPatterns: [/DayPicker/],
       defaultExtractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || []
     })
   ]
