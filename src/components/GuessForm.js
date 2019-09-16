@@ -72,6 +72,7 @@ export const GuessForm = ({ setGuessMade, setMightNotHaveGuessed, setOpen }) => 
     <PredictionStatement {...{ email, name, arrivalDay, arrivalTime, height, pounds, ounces, relation } } />
     <form
       className='flex flex-col justify-center items-center relative min-h-20 md:min-h-90 max-w-lg w-full px-12 md:px-0'
+      style={{ boxSizing: 'border-box' }}
       onSubmit={e => e.preventDefault()}
     >
       {loading
