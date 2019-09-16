@@ -5,7 +5,9 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build src/index.html --out-dir public"
+    "build": "parcel build src/index.html --out-dir public",
+    "stage": "now && now rm baby-olivia -ys",
+    "prod": "now --prod && now rm baby-olivia -ys"
   },
   "repository": {
     "type": "git",
