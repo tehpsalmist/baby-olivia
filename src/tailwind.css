@@ -1,0 +1,53 @@
+@import 'antd/dist/antd.css';
+@import 'react-day-picker/lib/style.css';
+
+@tailwind base;
+
+h1, h2, h3, h4, h5, h6 {
+  color: unset;
+}
+
+@font-face {
+  font-family: 'DomesticManners';
+  src: url('assets/Domestic_Manners.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind components;
+
+.guess-input {
+  @apply w-20 bg-blue-200 rounded mt-2 p-2 outline-none text-black shadow-md;
+}
+
+.guess-input:hover, .guess-input:focus {
+  @apply bg-green-200;
+}
+
+.DayPicker * {
+  line-height: 1.15;
+}
+
+.DayPicker-Day--highlighted {
+  @apply bg-pink-500 text-white !important;
+}
+
+.DayPicker-Day--selected {
+  @apply bg-green-500 text-white !important;
+}
+
+@tailwind utilities;
+
+.bg-blue-gradient {
+  background: linear-gradient(to bottom right, #2b6cb0, #509aeb);
+}
+
+.domestic-manners {
+  font-family: 'DomesticManners' !important;
+}
+
+@responsive {
+  .left-unset {
+    left: unset !important;
+  }
+}

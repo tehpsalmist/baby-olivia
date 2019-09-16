@@ -1,0 +1,42 @@
+{
+  "name": "baby-olivia",
+  "version": "1.0.0",
+  "description": "Guess Baby Olivia's Stats",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tehpsalmist/baby-olivia.git"
+  },
+  "keywords": [
+    "babies",
+    "guessing",
+    "games",
+    "olivia"
+  ],
+  "author": "Ben Steward <bstewardcodes@gmail.com> (https://tehpsalmist.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tehpsalmist/baby-olivia/issues"
+  },
+  "homepage": "https://github.com/tehpsalmist/baby-olivia#readme",
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "parcel": "^1.12.3",
+    "tailwindcss": "^1.1.2"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.0",
+    "antd": "^3.23.2",
+    "apollo-boost": "^0.4.4",
+    "apollo-link-ws": "^1.0.19",
+    "graphql": "^14.5.5",
+    "react": "^16.9.0",
+    "react-day-picker": "^7.3.2",
+    "react-dom": "^16.9.0",
+    "subscriptions-transport-ws": "^0.9.16"
+  }
+}
