@@ -15,7 +15,7 @@ export const LiveGuesses = props => {
       : data.guess && data.guess.length
         ? <ul>
           {data.guess.map((guess, i) => {
-            const date = moment(guess.arrival)
+            const date = moment(guess.arrival.slice(0, -6))
             const day = date.format('M/DD')
             const time = date.format('h:mm A')
 

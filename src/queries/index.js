@@ -1,7 +1,7 @@
 import { gql } from 'apollo-boost'
 
 export const SUBMIT_GUESS = gql`
-  mutation submit_guess($arrival: timestamp, $height: float8, $pounds: Int, $ounces: Int, $relationId: Int, $email: String, $name: String, $specialWords: String) {
+  mutation submit_guess($arrival: timestamptz, $height: float8, $pounds: Int, $ounces: Int, $relationId: Int, $email: String, $name: String, $specialWords: String) {
     insert_guess(objects: {arrival: $arrival, height: $height, ounces: $ounces, pounds: $pounds, relation_id: $relationId, user: {data: {email: $email, name: $name, special_words: $specialWords}}}) {
       returning {
         arrival

@@ -9,8 +9,12 @@ export const calculateArrival = (day, time) => {
     return ''
   }
 
-  day.setMinutes(time.minutes())
-  day.setHours(time.hours())
+  const dayCopy = new Date(day)
 
-  return day.toISOString()
+  const offsetHours = (time.hours() - (dayCopy.getTimezoneOffset() / 60))
+
+  dayCopy.setMinutes(time.minutes())
+  dayCopy.setHours(offsetHours)
+
+  return dayCopy.toISOString()
 }
