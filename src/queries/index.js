@@ -44,6 +44,27 @@ export const GUESS_SUBSCRIPTION = gql`
   }
 `
 
+export const GUESS_QUERY = gql`
+  query allGuesses  {
+    guess (order_by: {arrival: asc}) {
+      id
+      height
+      arrival
+      ounces
+      pounds
+      relation {
+        description
+        name
+        id
+      }
+      user {
+        name
+        id
+      }
+    }
+  }
+`
+
 export const RELATION_SUBSCRIPTION = gql`
   subscription liveRelations {
     relations(order_by: {id: asc}) {

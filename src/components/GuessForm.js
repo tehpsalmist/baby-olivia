@@ -45,24 +45,25 @@ export const GuessForm = ({ setGuessMade, setMightNotHaveGuessed, setOpen }) => 
     <button className='rounded p-4 bg-green-400 shadow-md text-xl' type='button' onClick={e => {
       e.preventDefault()
 
-      if (!pounds || !ounces) return setCurrentView(0)
-      if (!height) return setCurrentView(1)
-      if (!arrival) return setCurrentView(2)
-      if (!name) return setCurrentView(3)
-      if (!relation) return setCurrentView(4)
+      alert('She\'s already here, you cheater! :)')
+      // if (!pounds || !ounces) return setCurrentView(0)
+      // if (!height) return setCurrentView(1)
+      // if (!arrival) return setCurrentView(2)
+      // if (!name) return setCurrentView(3)
+      // if (!relation) return setCurrentView(4)
 
-      submitGuess({
-        variables: {
-          height,
-          pounds,
-          ounces,
-          arrival,
-          specialWords: specialWords || null,
-          name,
-          email: email || null,
-          relationId: relation.id,
-        }
-      })
+      // submitGuess({
+      //   variables: {
+      //     height,
+      //     pounds,
+      //     ounces,
+      //     arrival,
+      //     specialWords: specialWords || null,
+      //     name,
+      //     email: email || null,
+      //     relationId: relation.id,
+      //   }
+      // })
     }}>
       ❤️ Send Prediction 🎈
     </button>
